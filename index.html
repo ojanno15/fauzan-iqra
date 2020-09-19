@@ -1,13 +1,887 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Selamat Datang di Website Ini!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+    <style>
+    
+    body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px;
+	background-color: snow;
+    }
+    .wadah {
+	    width: 1298px;
+	    overflow: hidden;
+    }
+	.logoatas {
+		width: 150px;
+		height: 75x;
+		float: left;
+		margin-left: 50px;
+		margin-top: -26px;
+	}
+	.logoatas:hover {
+		color: lightblue;
+		cursor: pointer;
+	}
+    header {
+	    background: linear-gradient(to right, blue, snow );
+	    color: #fff;
+	    width: 1349px;
+        height: 20vh;
+    }
+    .isi {
+		width: 900px;
+		float: left;
+		margin-left: 220px;
+	    text-align: center;
+		font-family: sans-serif;
+		font-size: 50px;
+		text-align: center;
+    }
+	.tombolkiri {
+		width: 200px;
+		height: 35px;
+		background-color: transparent;
+		float: left;
+		margin-left: 400px;
+		text-align: center;
+		padding-top: 10px;
+		border-radius: 10px;
+		border: 1px ridge white;
+		color: white;
+		margin-top: 30px;
+		font-family: sans-serif;
+	}
+	.tombolkiri:hover {
+		color: lightblue;
+		cursor: pointer;
+	}
+	.tombolkanan {
+		width: 200px;
+		height: 35px;
+		background-color: transparent;
+		float: right;
+		margin-right: 400px;
+		text-align: center;
+		padding-top: 10px;
+		border-radius: 10px;
+		margin-top: 30px;
+		border: 1px ridge white;
+		color:white;
+		font-family: sans-serif;
+	}
+	.tombolkanan:hover {
+		color:lightblue;
+		cursor: pointer;
+	}
+        header .wadah h1{
+	    float: left;
+    }
+
+    header nav {
+		margin-top: -10px;
+	    position: relative;
+    }
+	.barismenu {
+		margin-left: 300px;
+		margin-top: 40px;
+	}
+    header li {
+	    display: inline-block; 
+	    padding: 10px;
+	    width: 80px;
+	    height: 20px;
+    }
+    header ul li a:hover {
+	    border-radius: 5px;
+        color: lightblue;
+
+    }
+    header a {
+	    text-decoration: none;
+	    color: snow;
+		font-family: sans-serif;
+    }
+	.tombolhijau {
+		border: 1px solid;
+		padding: 10px;
+  		box-shadow: 5px 10px 8px lightgreen;
+		background-color: lightgreen;
+		margin-right: 50px;
+		border-radius: 20px;
+		text-align: center;
+		float: right;
+		cursor: pointer;
+	}
+    .badansatu {
+	    padding-top: 100px;
+	    text-align: center;
+	    float: left;	
+	    width: 1300px;
+	    color: snow;
+    }
+    .satu {
+	    height: 120vh;
+	    width: 1349px;
+        background-image: url(./assets/img/alquran1.jpg);
+		float: left;
+    }
+    .satu:hover {
+  	    background-color:snow;
+    }
+    .dua {
+		width: 1349px;
+		height: 629px;
+		float: left;
+		background-color: snow;
+    }
+	.badandua {
+		width: 1349 px;
+		height: 628 px;
+		background-color: snow;
+	}
+	.iqra {
+		margin-top: 0;
+		padding-top: 50px;
+		background-color: snow;
+		text-align: center;
+		font-size: 40px;
+		font-family: sans-serif;
+    }
+	.isiiqra {
+		text-align: center;
+		width: 900px;
+		text-align: center;
+		font-family: sans-serif;
+		font-size: 15px;
+		margin-top: 60px;
+		margin-left: 220px;
+		color: #6D757D;
+		letter-spacing: 5px;
+		word-spacing: 5px;
+	}
+	.garisiqra {
+		padding: 0;
+		text-align: center;
+		width: 100px;
+		color: lightblue;
+		border: 2px solid #007aff;
+	}
+	.silabus {
+		text-align: center;
+		padding-top: 7px;
+		width: 200px;
+		height: 30px;
+		margin-top: 70px;
+		margin-left: 580px;
+		background-color: lightblue;
+		border-radius: 10px;
+		color: snow;
+	}
+	.silabus:hover {
+		color: snow;
+		cursor: pointer;
+		background: linear-gradient(to right, #007aff, #5ac8fa);
+		text-align: center;
+	}
+    .tmbl {
+	    margin-top: 45px;
+	    float: right;
+	    margin-left: 750px;
+    }
+    .tmblsub {
+	    float: right;
+    }
+	.kotakketik {
+		height: 15px;
+	}
+	.badantiga {
+		width: 1349px;
+		height: 900px;
+		background-color: snow;
+		float: left;
+	}
+	.mengapa {
+		margin-left: 130px;
+		font-family: sans-serif;
+		color: black;
+		font-size: 30px;
+		margin-top: 100px;	
+	}
+	.garismengapakiri {
+		width: 100px;
+		border: 2px solid #007aff;
+		margin-left: 130px;
+		font-size: 40px;
+		margin-top: -10px;
+	}
+	.judulkanansatu {
+		float: right;
+		width: 360px;
+		margin-right: 150px;
+		font-size: 40px;
+		margin-top: -70px;
+		font-family: sans-serif;
+		color: #212529;
+	}
+	.isikananiqra {
+		width: 350px;
+		height: 400px;
+		background-color: black;
+		float: right;
+		margin-top: 1500px;
+	}
+	.isikanansatu {
+		float: right;
+		width: 330px;
+		margin-right: -330px;
+		margin-top: 40px;
+		font-size: 15px;
+		font-family: sans-serif;
+		color: #6D757D;
+	}
+	.gambarkananisisatu {
+		width: 80px;
+		height: 80px;
+		margin-left: 720px;
+		margin-top: -100px;
+	}
+	.judulkanandua {
+		float: right;
+		width: 360px;
+		margin-right: -360px;
+		font-size: 40px;
+		margin-top: 145px;
+		font-family: sans-serif;
+		color: #212529;
+	}
+	.isikanandua {
+		float: right;
+		width: 330px;
+		margin-right: 180px;
+		margin-top: 30px;
+		font-size: 15px;
+		font-family: sans-serif;
+		color: #6D757D;
+	}
+	.gambarkananisidua {
+		width: 80px;
+		height: 80px;
+		margin-left: 720px;
+		margin-top: 150px;
+	}
+	.judulkanantiga {
+		float: right;
+		width: 360px;
+		margin-right: -360px;
+		font-size: 40px;
+		margin-top: 165px;
+		font-family: sans-serif;
+		color: #212529;
+	}
+	.isikanantiga {
+		float: right;
+		width: 330px;
+		margin-right: 180px;
+		margin-top: -2px;
+		font-size: 15px;
+		font-family: sans-serif;
+		color: #6D757D;
+	}
+	.gambarkananisitiga {
+		width: 80px;
+		height: 80px;
+		margin-left: 720px;
+		margin-top: 150px;
+	}
+	.fitur {
+		background-color: snow;
+	}
+	.judulfitur {
+		text-align: center;
+		background-color: snow;
+		font-size: 40px;
+		font-family: sans-serif;
+	}
+	.garisbawahfitur {
+		padding: 0;
+		text-align: center;
+		width: 100px;
+		color: lightblue;
+		border: 2px solid #007aff;
+		background-color: snow;
+	}
+	.isifitur {
+		background-color: snow;
+		text-align: center;
+		font-family: sans-serif;
+		color: #6D757D;
+		height: 150px;
+		font-size: 20px;
+		margin-top: 60px;
+		float: left;
+		width: 900px;
+		margin-left: 220px;
+
+	}
+	.empat {
+    	width: 1290px;    
+    	height: 250px;
+	    float: left;
+	    text-align: center;
+	}
+    .badanempat {
+	    width: 350px;
+	    float: left;
+	    margin-top: 40px;
+	    margin-left: 50px;
+        height: 80vh;
+		float: left;
+    }
+	.gambarempat {
+		width: 200px;
+		height: 250px;
+	}
+	.isisatu {
+		color: #6D757D;
+		font-family: sans-serif;
+		font-size: 20px;
+		font-weight: 300px;
+		word-spacing: 12px;
+		text-align: center;
+	}
+    .badanlima {
+	    width: 350px;
+    	float: left;
+    	margin-left: 90px;
+    	margin-top: 40px;
+        height: 100vh; 
+    }
+	.gambarlima {
+		width: 200px;
+		height: 250px;
+	}
+	.isidua {
+		color: #6D757D;
+		font-family: sans-serif;
+		font-size: 20px;
+		font-weight: 300px;
+		word-spacing: 15px;
+		text-align: center;
+	}
+    .badanenam {
+	    width: 360px;
+	    float: left;
+    	margin-left: 90px;
+    	margin-top: 40px;
+        height: 80vh;
+		float: left;
+    }
+	.gambarenam {
+		width: 200px;
+		height: 250px;
+	}
+	.isitiga {
+		color: #6D757D;
+		font-family: sans-serif;
+		font-size: 20px;
+		font-weight: 300px;
+		word-spacing: 12px;
+		text-align: center;
+	}
+	.galeri {
+		width: 1349px;
+
+	}
+	.badangalerisatu {
+		width: 1349px;
+		height: 400px;
+		float: left;
+		margin-top: -70px;
+		background-color:#e6fff8;
+	}
+	.judulgaleri {
+		text-align: center;
+		background-color: #e6fff8;
+		font-size: 40px;
+		font-family: sans-serif;
+		color: black;
+	}
+	.hrgaleri {
+		width: 100px;
+		border: 2px solid #007aff;
+		margin-left: 625px;
+		font-size: 40px;
+		margin-top: -10px;
+	}
+	.gambargalerisatu {
+		width: 320px;
+		height: 180px;
+		border-radius: 10px;
+		float: left;
+		margin-left: 140px;
+		margin-top: 60px;
+		cursor: pointer;
+	}
+	.gambargaleridua {
+		width: 320px;
+		height: 180px;
+		border-radius: 10px;
+		float: left;
+		margin-left: 50px;
+		margin-top: 60px;
+		background-color: snow;
+		cursor: pointer;
+	}
+	.gambargaleritiga {
+		width: 320px;
+		height: 180px;
+		border-radius: 10px;
+		float: left;
+		margin-left: 50px;
+		margin-top: 60px;
+		cursor: pointer;
+	}
+	.badangaleridua {
+		width: 1349px;
+		height: 300px;
+		float: left;
+		background-color: #e6fff8;
+	}
+	.gambargaleriempat {
+		width: 320px;
+		height: 180px;
+		border-radius: 10px;
+		float: left;
+		margin-left: 140px;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+	.gambargalerilima {
+		width: 320px;
+		height: 180px;
+		border-radius: 10px;
+		float: left;
+		margin-left: 50px;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+	.gambargalerienam {
+		width: 320px;
+		height: 180px;
+		border-radius: 10px;
+		float: left;
+		margin-left: 50px;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+	.ourteam {
+		width: 1349px;
+		height: 400px;
+		float: left;
+	}
+	.ourteam-title {
+		text-align: center;
+		background-color: snow;
+		font-size: 40px;
+		font-family: sans-serif;
+		color: black;
+		margin-top: 150px;
+	}
+	.ourteam-underline {
+		width: 100px;
+		border: 2px solid #007aff;
+		margin-left: 625px;
+		font-size: 40px;
+		margin-top: -10px;
+	}
+	.ourteam-content {
+		background-color: snow;
+		text-align: center;
+		font-family: sans-serif;
+		color: #6D757D;
+		height: 40px;
+		font-size: 20px;
+		margin-top: 50px;
+		float: left;
+		width: 900px;
+		margin-left: 220px;
+	}
+	.ourteam-photoslider {
+		width: 1349px;
+		height: 350px;
+		float: left;
+	}
+	.ourteam-photoslider-part-one {
+		width: 1349px;
+		height: 300px;
+		float: left;
+	}
+	.ourteam-photoslider-one {
+		width: 200px;
+		height: 200px;
+		float: left;
+		border-radius: 100px;
+		margin-left: 180px;
+	}
+	.ourteam-photoslider-description {
+		float: left;
+		width: 1249px;
+		height: 40px;
+	}
+	.ourteam-photoslider-description-one {
+		float: left;
+		margin-left: 245px;
+		margin-top: 20px;
+	}
+	.ourteam-photoslider-two {
+		width: 200px;
+		height: 200px;
+		float: right;
+		margin-top: -240px;
+		border-radius: 100px;
+		margin-right: 550px;
+	}
+	.ourteam-photoslider-description-two {
+		float: left;
+		margin-left: 655px;
+		margin-top: -20px;
+	}
+	.ourteam-photoslider-three {
+		width: 200px;
+		height: 200px;
+		float: right;
+		margin-top: -275px;
+		border-radius: 100px;
+		margin-right: 150px;
+	}
+	.ourteam-photoslider-description-three {
+		float: left;
+		margin-left: 1040px;
+		margin-top: -60px;
+	}
+ 
+ 	.ourteam-photoslider {
+		overflow: hidden;
+		height: 350px;
+	 }
+  
+ 	.ourteam-photoslider .figure-one ourteam-photoslider-part-one {
+		width: 20%;
+		float: left;
+ 	}
+  
+ 	.ourteam-photoslider ourteam-photoslider-part-one img {
+		width: 100%;
+		float: left;
+	 }
+ 	.ourteam-photoslider .figure-one {
+		position: relative;
+		width: 500%;
+		margin: 0;
+		left: 0;
+		animation: 20s slidy infinite;
+	 }
+	 .ourteam-photoslider-description-one {
+		float: left;
+		margin-left: 245px;
+		margin-top: 20px;
+	}
+	.ourteam-photoslider-two {
+		width: 200px;
+		height: 200px;
+		float: right;
+		margin-top: -240px;
+		border-radius: 100px;
+		margin-right: 550px;
+	}
+	.ourteam-photoslider-five {
+		width: 200px;
+		height: 200px;
+		float: left;
+		margin-top: -320px;
+		border-radius: 100px;
+		margin-left: 180px;
+	}
+	.ourteam-photoslider-description-five{
+		float: left;
+		margin-left: 225px;
+		margin-top: -100px;
+	}
+	.ourteam-photoslider-six {
+		width: 200px;
+		height: 200px;
+		float: right;
+		margin-top: -360px;
+		border-radius: 100px;
+		margin-right: 550px;
+	}
+	.ourteam-photoslider-description-six {
+		float: left;
+		margin-left: 620px;
+		margin-top: -140px;
+	}
+	.ourteam-photoslider-seven {
+		width: 200px;
+		height: 200px;
+		float: right;
+		margin-top: -395px;
+		border-radius: 100px;
+		margin-right: 150px;
+	}
+	.ourteam-photoslider-description-seven {
+		float: left;
+		margin-left: 1020px;
+		margin-top: -180px;
+	}
+	.ourteam-photoslider ourteam-photoslider-part-two img {
+		width: 100%;
+		float: left;
+		transition: ease-in-out;
+	 }
+	@keyframes slidy {
+	0%{
+		left: 0%
+	}
+ 
+	10%{
+		left: 0%;
+	}
+ 
+	12%{
+		left: -100%;
+	}
+ 
+	22%{
+		left: -100%;
+	}
+ 
+	24%{
+		left: -200%;
+	}
+ 
+	34%{
+		left: -200%;
+	}
+ 
+	36%{
+		left: -300%;
+	}
+ 
+	46%{
+		left: -300%;
+	}
+ 
+	48%{
+		left: -400%;
+	}
+ 
+	58%{
+		left: -400%;
+	}
+ 
+	60%{
+		left: -300%;
+	}
+ 
+	70%{
+		left: -300%;
+	}
+ 
+	72%{
+		left: -200%;
+	}
+ 
+	82%{
+		left: -200%;
+	}
+ 
+	84%{
+		left: -100%;
+	}
+ 
+	94%{
+		left: -100%;
+	}
+ 
+	96%{
+		left: 0%;
+	}
+ 
+	100%{
+		left: 0%;
+	}
+	}
+    </style>
 </head>
 <body>
-    <div>
-        <h1>Mantap</h1>
-    </div>
-</body>
+	<header>
+		<div class="wadah">
+			<nav>
+				<img class="logoatas" src="/assets/img/logo.svg" alt="none">
+				<ul class="barismenu">
+					<li class="menu"><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Fitur</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Our Team</a></li>
+					<li><a href="">Contact      </a></li>
+					<li class="tombolhijau"><a href="">Register</a></li>
+				</ul>
+			</nav>
+		</div>
+		</header>
+
+		<section class="satu">
+			<div class="badansatu">
+				<p class="isi">
+					Sebaik-baik kalian adalah orang yang belajar Al-Qur`an dan mengajarkannya
+				</p>
+				<h2 class="tombolkiri">Mulai mengaji</h2>
+				<h2 class="tombolkanan">Mulai Mengajar</h2>
+			</div>
+		</section>
+
+		<section class="dua">
+			<div class="badandua">
+				<h1 class="iqra">Apa itu IQRA</h1>
+				<hr class="garisiqra">
+				<p class="isiiqra"> Aplikasi IQRA (Indonesia Quran Reciter Application) merupakan aplikasi berbasis website
+					yang dapat mempertemukan sahabat muslim yang ingin belajar mengaji (mentee) dengan
+					sahabat muslim lainnya yang memiliki kemampuan dalam mengajarkan Al-Qur’an
+					(mentor) melalui metode pengajaran yang sudah ditentukan dengan tepat oleh tim kurator
+					kurikulum mengajar Al-Quran.</p>
+					<h3 class="silabus">Lihat Silabus</h3>
+			</div>
+		</section>
+
+		<section class="tiga">
+			<div class="badantiga">
+				<div class="isikananiqro">
+					<h4 class="mengapa">Mengapa kami?</h4>
+					<hr class="garismengapakiri">
+					<img class="gambarkananisisatu" src="./assets/img/belajarsecaralangsung.svg" alt="">
+					<h3 class="judulkanansatu">Belajar secara langsung (Talaqqi)</h3>
+					<p class="isikanansatu">IQRA memberi kemudahan bagi mentor dan mentee untuk belajar mengaji secara langsung. Belajar secara langsung merupakan metode belajar yang paling baik dan mudah dalam mengajarkan Al-Quran.</p>
+					<img class="gambarkananisidua" src="./assets/img/location.svg" alt="">
+					<h3 class="judulkanandua">Lokasi dan waktu yang flexible</h3>
+					<p class="isikanandua">IQRA menghadirkan fitur yang memudahkan mentee dan mentor belajar mengaji dengan waktu yang flexible dan lokasi yang terdekat. Sehingga kita dapat belajar mengaji dimanapun dan kapanpun.</p>		
+					<img class="gambarkananisitiga" src="./assets/img/free.svg" alt="">
+					<h3 class="judulkanantiga">Free</h3>
+					<p class="isikanantiga">IQRA memastikan bahwa tidak ada biaya transaksi antara mentee dan mentor dalam proses belajar mengaji.</p>		
+				</div>
+			</div>
+		</section>
+
+		<section class="fitur">
+			<div class="badanfitur">
+				<h2 class="judulfitur">Fitur IQRA</h2>
+				<hr class="garisbawahfitur">
+				<p class="isifitur">IQRA memiliki beberapa fitur yang memudahkan mentor dan mentee dalam menggunakan nya, di antaranya.</p>
+			</div>
+		</section>
+
+		<section class="empat">
+			<div class="badanempat">
+				<div class="kotaksatu">
+					<img class="gambarempat" src="assets/img/satuu.svg">
+					<p class="isisatu">
+						Proses mengaji akan dikategorikan menjadi 4 kelas yaitu Pratahsin, Tahsin, Irama, dan Tahfidz.
+					</p>
+				</div>
+			</div>
+
+			<div class="badanlima">
+				<div class="kotakdua">
+					<img class="gambarlima" src="assets/img/duaa.svg">
+					<p class="isidua">
+						Melalui aplikasi IQRA kamu bisa menjadi mentee sekaligus mentor, semua tersedia dalam 1 aplikasi.
+					</p>
+				</div>
+			</div>
+
+			<div class="badanenam">
+				<div class="kotaktiga">
+					<img class="gambarenam" src="assets/img/tigaa.svg">
+					<p class="isitiga">
+						Dapatkan pengalaman mengaji bareng dengan cara yang mudah, Dimanapun sesuai dengan jadwal dan tempat kamu.
+					</p>
+				</div>
+			</div>
+
+			<div class="badangalerisatu">
+				<h2 class="judulgaleri">Galeri</h2>
+				<hr class="hrgaleri">
+				<img class="gambargalerisatu" src="./assets/img/gambargalerisatu.jpg" alt="none">
+				<img class="gambargaleridua" src="./assets/img/gambargaleridua.jpg" alt="none">
+				<img class="gambargaleritiga" src="./assets/img/gambargaleritiga.jpg" alt="none">
+			</div>
+
+			<div class="badangaleridua">
+				<img class="gambargaleriempat" src="./assets/img/gambargaleriempat.jpg" alt="none">
+				<img class="gambargalerilima" src="./assets/img/gambargalerilima.jpg" alt="none">
+				<img class="gambargalerienam" src="./assets/img/gambargalerienam.jpg" alt="none">
+			</div>
+
+			<div class="ourteam">
+				<h2 class="ourteam-title">Tim Kami</h2>
+				<hr class="ourteam-underline">
+				<p class="ourteam-content">Halo, perkenalkan kami adalah tim di balik berjalannya IQRA</p>
+			</div>
+
+			<div class="ourteam-photoslider">
+				<figure class="figure-one">
+					<div class="ourteam-photoslider-part-one">
+
+						<img class="ourteam-photoslider-one" src="./assets/img/Muhammad Rizki Sani.jpg" alt="none">
+							<div class="ourteam-photoslider-description">
+								<p class="ourteam-photoslider-description-one">"Founder"</p>
+							</div>
+
+						<img class="ourteam-photoslider-two" src="./assets/img/mutia fadila.jpg" alt="none">
+						<div class="ourteam-photoslider-description">
+							<p class="ourteam-photoslider-description-two">"Co-Founder"</p>
+						</div>
+
+						<img class="ourteam-photoslider-three" src="./assets/img/Dimas Pandu Pratama.jpg" alt="none">
+						<div class="ourteam-photoslider-description">
+							<p class="ourteam-photoslider-description-three">"Software Engineer"</p>
+						</div>
+
+					<div class="ourteam-photoslider-part-two">
+
+						<img class="ourteam-photoslider-five" src="./assets/img/Syahidina Alif.jpg" alt="none">
+							<div class="ourteam-photoslider-description">
+								<p class="ourteam-photoslider-description-five">"UI/UX Designer"</p>
+							</div>
+
+						<img class="ourteam-photoslider-six" src="./assets/img/Faqihus Syar`i.jpg" alt="none">
+						<div class="ourteam-photoslider-description">
+							<p class="ourteam-photoslider-description-six">"Senior Mentor (Ikhwan)"</p>
+						</div>
+
+						<img class="ourteam-photoslider-seven" src="./assets/img/Ibnu Mahfuzh.jpg" alt="none">
+						<div class="ourteam-photoslider-description">
+							<p class="ourteam-photoslider-description-seven">"Senior Mentor (Ikhwan)"</p>
+						</div>
+				</figure>
+				</div>
+
+				<img class="ourteam-photoslider-four" src="" alt="">
+				<img class="ourteam-photoslider-five" src="" alt="">
+				<img class="ourteam-photoslider-six" src="" alt="">
+				<img class="ourteam-photoslider-seven" src="" alt="">
+				<img class="ourteam-photoslider-eight" src="" alt="">
+				<img class="ourteam-photoslider-nine" src="" alt="">
+				<img class="ourteam-photoslider-ten" src="" alt="">
+
+			</div>
+		</section>
+		
+</body>	
 </html>
